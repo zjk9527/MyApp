@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+    tools:context="com.zjk.my_app.fragment.NearbyFragment">
+
+    <!-- 附近  界面 -->
+
+    <RelativeLayout
+        android:layout_below="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/RelativeLayout">
+            <com.baidu.mapapi.map.TextureMapView
+                android:id="@+id/bmapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_mapmarker"
+                android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:background="@color/white"
+                    android:id="@+id/iv_locating"
+                    android:layout_marginBottom="45dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_icon_follow"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                     />
+    </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true">
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="14sp"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        <ImageView
+            android:layout_marginRight="55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="30dp"
+            android:id="@+id/iv_go"
+            android:layout_width="40dp"
+            android:src="@drawable/go"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gray_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="附近地图"
+            android:textSize="20sp"
+            android:gravity="center"
+           android:layout_centerHorizontal="true"
+            />
+    <TextView
+        android:id="@+id/tv_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+
+      android:background="@drawable/search_grey"
+        />
+    </RelativeLayout>
+</RelativeLayout>

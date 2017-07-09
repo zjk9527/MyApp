@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/imageView_1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/cloudy"
+        android:layout_alignParentLeft="true"/>
+    
+<TextView
+    android:id="@+id/tv_weather1"
+    android:layout_width="60dp"
+    android:textColor="@color/white"
+    android:layout_height="match_parent"
+    android:layout_toRightOf="@+id/imageView_1"
+    android:text="小雨"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tv_weather3"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/tv_wind"
+        android:text="星期3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="25dp"/>
+<TextView
+    android:layout_marginLeft="25dp"
+    android:textColor="@color/white"
+    android:layout_toRightOf="@+id/tv_weather2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/tv_wind"
+    android:gravity="center"
+    android:textSize="18sp"
+    android:text="风"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/tv_weather2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="25/15"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_toEndOf="@+id/tv_weather1"
+        android:layout_marginStart="17dp" />
+
+
+</RelativeLayout>

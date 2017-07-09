@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.fragment.CarmodelFragment">
+<!--车型界面-->
+    <!-- TODO: Update blank fragment layout -->
+    <include
+        android:id="@+id/inlcude_midel_bottom_layout"
+        layout="@layout/radiogroup_list_02"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_model"
+        android:layout_weight="1"
+
+        android:layout_height="0dp"
+        android:layout_width="match_parent" />
+
+</LinearLayout>

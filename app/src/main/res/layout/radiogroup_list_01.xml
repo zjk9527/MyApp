@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<RadioGroup
+    android:id="@+id/rgroup1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+
+
+   >
+
+
+    <RadioButton
+        android:id="@+id/rbtn_car_news"
+        android:button="@null"
+        android:text="最新"
+        android:background="@drawable/radiobutton_lies"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:checked="false"
+       android:textColor="@color/text_color_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/rbtn_car_guide"
+        android:button="@null"
+        android:text="导购"
+        android:background="@drawable/radiobutton_lies"
+        android:textColor="@color/text_color_selector"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioButton
+        android:id="@+id/rbtn_car_evaluation"
+        android:button="@null"
+        android:text="评测"
+        android:background="@drawable/radiobutton_lies"
+        android:textColor="@color/text_color_selector"
+        android:padding="15dp"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RadioGroup>
+
+
+</LinearLayout>

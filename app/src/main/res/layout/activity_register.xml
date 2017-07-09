@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:orientation="vertical"
+
+    >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="注   册"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickbaoxian"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+    </RelativeLayout>
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/view_color"
+        android:layout_below="@+id/RelativeLayout1"/>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:hint="请输入手机号"/>
+</android.support.design.widget.TextInputLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_code"
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送验证码"
+
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="14sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/tv_code"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+
+            android:inputType="number"
+            android:hint="验证码"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="textPhonetic"
+            android:hint="用户名"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="再次输入密码"
+            android:textSize="16sp"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <RadioGroup
+            android:id="@+id/rg_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rb_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="个人"/>
+            <RadioButton
+                android:id="@+id/rb_repairman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="汽修工"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:hint="个人说明"
+            android:gravity="top|left"
+            android:lines="2"/>
+
+
+        <Button
+                android:id="@+id/btn_register"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注       册"
+            android:textSize="18sp"
+            android:background="@drawable/logonbutton_selector"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

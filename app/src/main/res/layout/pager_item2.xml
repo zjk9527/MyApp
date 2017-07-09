@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:background="@color/bule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zjk.my_app.util.XCRoundRectImageView
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/a2"
+        android:background="@drawable/background_pager_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

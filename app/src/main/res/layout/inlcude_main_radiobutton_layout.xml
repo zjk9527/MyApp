@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+
+    android:orientation="vertical"
+    > <TextView
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#382F2A"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal"
+        android:id="@+id/rgroup">
+
+
+        <RadioButton
+            android:id="@+id/rbtn_news"
+            android:text="资讯"
+            android:textColor="@color/text_color_selector"
+           android:textSize="14sp"
+            style="@style/RadioGroup_style"
+            android:drawableTop="@drawable/news"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rbtn_car"
+            android:text="车型"
+            android:textColor="@color/text_color_selector"
+            android:textSize="14sp"
+            style="@style/RadioGroup_style"
+            android:drawableTop="@drawable/car"
+            />
+        <RadioButton
+            style="@style/RadioGroup_style"
+            android:id="@+id/rbtn_my"
+            android:text="我的"
+            android:textColor="@color/text_color_selector"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/my"
+            android:checked="false"
+            />
+        <RadioButton
+            style="@style/RadioGroup_style"
+            android:id="@+id/rbtn_nearby"
+            android:text="附近"
+            android:textColor="@color/text_color_selector"
+            android:textSize="14sp"
+            android:drawableTop="@drawable/nearby"
+            />
+        <RadioButton
+            style="@style/RadioGroup_style"
+            android:text="圈子"
+            android:textColor="@color/text_color_selector"
+            android:textSize="14sp"
+            android:id="@+id/rbtn_collection"
+            android:drawableTop="@drawable/shoucang"
+            />
+
+
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

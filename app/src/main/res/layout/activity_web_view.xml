@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_web_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.app_activity.WebViewActivity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+          android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickwebView"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+        <TextView
+            android:id="@+id/textView_Actionbar_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="#FFFF"
+            android:gravity="center"
+            android:text="查看全部"
+            android:textSize="20sp"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/title"
+        android:background="@color/title_color"/>
+   <com.zjk.my_app.Test.LoadWebView
+       android:id="@+id/webView"
+       android:layout_below="@+id/view"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:progress_height="5dp"
+       app:error_text_size="16sp"
+       app:error_text="页面加载错误，点击页面重试！">
+   </com.zjk.my_app.Test.LoadWebView>
+
+</RelativeLayout>

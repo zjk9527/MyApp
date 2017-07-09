@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    >
+    <ImageView
+        android:id="@+id/imageView_Actionbar_Left6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_launcher"
+        />
+    <TextView
+        android:id="@+id/textView_Actionbar_Title"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="标题文本"
+        />
+    <ImageView
+        android:id="@+id/imageView_Actionbar_Right"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_gravity="center_vertical"
+        />
+</LinearLayout>

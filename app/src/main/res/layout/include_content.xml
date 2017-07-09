@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_margin="5dp"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="40dp"
+        android:paddingBottom="3dp">
+
+        <com.zjk.my_app.util.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_avatar"
+            android:layout_alignParentLeft="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="zhangsan"
+                    android:gravity="center_vertical"
+                    />
+
+                <ImageView
+                    android:id="@+id/img_isSort"
+                    android:scaleType="centerCrop"
+
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_created_time"
+                   android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017-01-01 00:00:00"
+                    android:textSize="10sp"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="来自: "
+                    android:textSize="10sp"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/location"/>
+
+                <TextView
+                    android:id="@+id/label_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="武汉"
+                    android:textSize="10sp"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginLeft="2dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:maxLines="4"
+        android:text="这个是新闻的内容预览"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+       android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="评论"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_comment"/>
+        <TextView
+            android:text="会话"
+            android:layout_toRightOf="@+id/tv_comment"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_dialogue"
+            android:layout_alignBottom="@+id/tv_comment" />
+        <TextView
+            android:textSize="16sp"
+            android:text="联系方式:"
+            android:layout_toLeftOf="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+       <!-- android:autoLink="phone"
+       使用方便 但类似像110这种号码读取不了 -->
+        <TextView
+            android:id="@+id/tv_phone"
+            android:text="18908683128"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

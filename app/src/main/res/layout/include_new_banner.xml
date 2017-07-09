@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:padding="5dp">
+
+
+    <android.support.v4.view.ViewPager
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:id="@+id/viewPager1"
+          />
+
+<TextView
+    android:id="@+id/tv_newsimg_title"
+   android:gravity="left"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_gravity="bottom"
+    android:textStyle="bold"
+    android:padding="10dp"
+    android:maxLines="2"
+    android:textSize="16sp"
+    android:layout_marginBottom="10dp"
+   android:textColor="@color/News_Title"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal"
+    android:gravity="center"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="10dp"
+    >
+    <View
+        android:id="@+id/v_dot0"
+        style="@style/dot_style"
+        android:background="@drawable/dot_focus"
+        android:visibility="gone"
+        />
+    <View
+        android:id="@+id/v_dot1"
+        style="@style/dot_style"
+        android:visibility="gone"
+
+        />
+    <View
+    android:id="@+id/v_dot2"
+    style="@style/dot_style"
+    android:visibility="gone"
+
+    />
+    <View
+    android:id="@+id/v_dot3"
+    style="@style/dot_style"
+    android:visibility="gone"
+
+    />
+    <View
+    android:id="@+id/v_dot4"
+    style="@style/dot_style"
+    android:visibility="gone"
+
+    />
+
+</LinearLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+
+    tools:context="com.zjk.my_app.app_activity.AddActivity">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/iv_back"
+
+                android:padding="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/titlebar_back"/>
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="发布事件"/>
+            <TextView
+                android:id="@+id/tv_publish"
+                android:text="发布"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:gravity="left|top"
+            android:hint="这一刻的想法..."
+            android:inputType="textMultiLine"
+            android:maxLength="64"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_tip"
+
+            android:background="@color/white"
+            android:layout_marginRight="14sp"
+            android:gravity="right"
+            android:text="0/64"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+            android:background="@drawable/shape_bk"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+
+            <ImageView
+                android:id="@+id/img_plus"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="13dp"
+                android:src="@drawable/plus"/>
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_phone"
+                android:text="联系方式："
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_toRightOf="@+id/tv_phone"
+                android:id="@+id/ed_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

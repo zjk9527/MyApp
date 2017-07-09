@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+     <TextView
+    android:id="@+id/tv_fullname"
+    android:text="汽车名字"
+    android:layout_toRightOf="@+id/iv_logo"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+
+        android:layout_alignParentLeft="true"
+        android:id="@+id/iv_logo"
+        android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/tv_salestate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售状态："
+            android:textSize="14sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+</LinearLayout>

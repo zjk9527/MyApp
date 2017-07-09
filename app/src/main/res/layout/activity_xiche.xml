@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_xiche"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.app_activity.xicheActivity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left6"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickxiche"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+        <TextView
+            android:id="@+id/textView_Actionbar_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textColor="#FFFF"
+            android:gravity="center"
+            android:text="附近的洗车店"
+            android:textSize="20sp"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/title"
+        android:background="@color/title_color"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:text="附近洗车店"
+        android:gravity="center"/>
+</RelativeLayout>

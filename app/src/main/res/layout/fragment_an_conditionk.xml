@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.fragment.An_conditionkFragment">
+
+    <!--车型里的两个botton中的”按条件“界面-->
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="按条件(下面listview)"
+        />
+    <ListView
+        android:id="@+id/listView_car_guide"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:padding="6dp">
+    <fragment
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/news_photoId"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/b"/>
+    <!--新闻内容布局-->
+    <RelativeLayout
+        android:id="@+id/news_Content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/news_photoId">
+<TextView
+    android:id="@+id/news_text"
+    android:text="       今天谁谁谁做了什么什么什么事"
+    android:layout_width="match_parent"
+    android:layout_height="70dp" />
+        <TextView
+            android:id="@+id/news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="更新的时间"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/news_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="作者或出处"
+            android:layout_toRightOf="@id/news_time"
+            android:layout_below="@+id/news_text"
+            android:layout_marginLeft="80dp"
+            />
+    </RelativeLayout>
+</RelativeLayout>

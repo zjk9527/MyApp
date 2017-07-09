@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_live2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjk.my_app.app_activity.LiveActivity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left4"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickpark"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+        <TextView
+            android:id="@+id/textView_Actionbar_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="直播间ID"
+            android:textSize="20sp"
+            android:layout_weight="0.9" />
+    </LinearLayout>
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/title"
+        android:background="@color/title_color"/>
+<RelativeLayout
+    android:layout_below="@+id/View"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ucloud.ulive.widget.UAspectFrameLayout
+        android:id="@+id/uafl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="changeCam"
+                    android:text="切换镜头" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="stopShow"
+                    android:text="结束直播" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </com.ucloud.ulive.widget.UAspectFrameLayout>
+
+    <com.ucloud.uvod.widget.UVideoView
+        android:id="@+id/uVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.ucloud.uvod.widget.UVideoView>
+</RelativeLayout>
+</RelativeLayout>

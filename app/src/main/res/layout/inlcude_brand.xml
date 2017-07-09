@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="85dp"
+
+    android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/tv_a"
+           android:text="          a"
+
+            android:background="#DCDCDC"
+           android:textSize="22sp"
+           android:layout_width="match_parent"
+           android:layout_height="25dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+     <TextView
+    android:id="@+id/tv_name"
+    android:text="汽车品牌"
+    android:layout_toRightOf="@+id/iv_logo"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/iv_logo"
+
+        android:layout_height="match_parent" />
+        </RelativeLayout>
+
+</LinearLayout>

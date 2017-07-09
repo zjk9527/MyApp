@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_idmodel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zjk.my_app.app_activity.IdmodelActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickbaoxian"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="品牌所有车型"
+            android:textSize="16sp"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/title"
+        android:background="#6F6F67"/>
+    <ListView
+        android:layout_below="@+id/view"
+        android:id="@+id/lv_idmodel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:background="@drawable/gray_bg"
+        android:divider="#FFFFFF"
+        android:dividerHeight="1dp" />
+</RelativeLayout>

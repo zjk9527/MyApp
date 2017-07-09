@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/city0"
+        android:icon="@null"
+        android:title="武汉"
+        />
+    <item
+        android:id="@+id/city1"
+        android:icon="@null"
+        android:title="鄂州"
+        /><item
+    android:id="@+id/city2"
+    android:icon="@null"
+    android:title="孝感"
+    /><item
+    android:id="@+id/city3"
+    android:icon="@null"
+    android:title="黄石"
+    /><item
+    android:id="@+id/city4"
+    android:icon="@null"
+    android:title="黄冈"
+    />
+    <item
+        android:id="@+id/city5"
+        android:icon="@null"
+        android:title="咸宁"
+        />
+    <item
+        android:id="@+id/city6"
+        android:icon="@null"
+        android:title="青岛"
+        />
+    <item
+        android:id="@+id/city7"
+        android:icon="@null"
+        android:title="武汉"
+        />
+    <item
+        android:id="@+id/city8"
+        android:icon="@null"
+        android:title="上海"
+        />
+    <item
+        android:id="@+id/city9"
+        android:icon="@null"
+        android:title="深圳"
+        />
+    <item
+        android:id="@+id/city10"
+        android:icon="@null"
+        android:title="广州"
+        />
+    <item
+        android:id="@+id/city11"
+        android:icon="@null"
+        android:title="哈尔滨"
+        />
+
+
+
+
+
+
+
+
+
+</menu>

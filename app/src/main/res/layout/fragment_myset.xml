@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/app_bg"
+    tools:context=".app_activity.MysetActivity">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+       android:background="@color/bg_color"
+        android:id="@+id/RelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="设置"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"/>
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickwebView"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/RelativeLayout"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"/>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.fragment.An_brandFragment">
+<!--车型里的两个botton中的按车型-->
+    <!-- TODO: Update blank fragment layout -->
+    <com.zjk.my_app.util.ClearEditText
+        android:id="@+id/clearEditText"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bar_edit_selector"
+        android:drawableLeft="@drawable/search_bar_icon_normal"
+        android:hint="请输入关键字"
+        android:singleLine="true"
+        android:textSize="15.0dip"
+        />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ListView
+        android:padding="5dp"
+        android:id="@+id/lv_brand"
+        android:layout_width="match_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="#00000000"
+        android:background="@drawable/gray_bg"
+        android:divider="#DCDCDC"
+        android:layout_gravity="center"
+        android:dividerHeight="1dp"
+        android:layout_height="match_parent"
+        />
+    <TextView
+        android:id="@+id/tv_zm"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@drawable/show_head_toast_bg"
+        android:gravity="center"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:visibility="invisible" />
+    <com.zjk.my_app.util.SideBar
+        android:id="@+id/sidrbar"
+        android:layout_width="30.0dip"
+        android:layout_height="fill_parent"
+        android:layout_gravity="right|center"/>
+</FrameLayout>
+
+
+</LinearLayout>

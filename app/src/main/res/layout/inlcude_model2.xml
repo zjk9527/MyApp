@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+     <TextView
+    android:id="@+id/tv_name"
+    android:text="汽车名字"
+    android:layout_toRightOf="@+id/iv_logo1"
+    android:layout_marginLeft="20dp"
+    android:gravity="center"
+    android:textSize="14sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"/>
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_logo1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="18dp"
+            android:textColor="@color/colorAccent"
+            android:text="价格"
+            android:textSize="18sp"/>
+        <TextView
+            android:text="紧凑车型"
+            android:textSize="14sp"
+          android:layout_marginTop="50dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_sizetype"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="100dp"
+
+        android:layout_alignParentLeft="true"
+        android:id="@+id/iv_logo1"
+        android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/tv_salestate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="销售状态："
+            android:textSize="14sp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        </RelativeLayout>
+
+</LinearLayout>

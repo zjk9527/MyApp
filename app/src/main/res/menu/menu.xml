@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/myset"
+    android:icon="@null"
+    android:title="我的设置"/>
+    <item android:id="@+id/mymsn"
+        android:icon="@null"
+        android:title="消息"/>
+    <item android:id="@+id/myguanyu"
+        android:icon="@null"
+        android:title="关于..."/>
+    <item android:id="@+id/car_photo"
+    android:icon="@null"
+    android:title="收藏"/>
+    <item android:id="@+id/register"
+        android:icon="@null"
+        android:title="注册"/>
+
+
+
+
+
+</menu>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zjk.my_app.app_activity.oneActivity">
+    <RelativeLayout
+        android:id="@+id/iv1"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hh" >
+
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+    <TextView
+
+        android:id="@+id/a"
+        android:layout_gravity="right"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广告倒计时:"
+
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="14sp"
+        android:text="4"
+       android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/b"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:text="秒"
+
+        android:layout_toRightOf="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="version 1.0"
+        android:textSize="16sp"
+        android:textColor="#FFFE"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"/>
+
+
+    </RelativeLayout>
+</RelativeLayout>

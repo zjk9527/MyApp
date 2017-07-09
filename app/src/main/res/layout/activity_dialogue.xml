@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_live"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zjk.my_app.app_activity.DialogueActivity">
+<RelativeLayout
+
+    android:layout_marginTop="100dp"
+    android:layout_centerHorizontal="true"
+    android:layout_width="200dp"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/title_color"
+        android:layout_toLeftOf="@+id/roon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="设置直播间ID:"/>
+    <EditText
+        android:layout_alignParentRight="true"
+        android:id="@+id/roon_id"
+        android:hint="直播间id"
+        android:gravity="center"
+        android:text="17027"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+    <Button
+        android:id="@+id/btn_look"
+        android:text="观看看直播"
+        android:layout_marginTop="150dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_found"
+        android:text="创建直播间"
+        android:layout_marginTop="200dp"
+        android:textSize="18sp"
+       android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_chat"
+        android:text="聊天"
+        android:layout_marginTop="250dp"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

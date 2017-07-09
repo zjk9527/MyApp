@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_brand__model_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.zjk.my_app.app_activity.Brand_Model_Activity">
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageView_Actionbar_Left"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickbaoxian"
+            android:layout_height="match_parent"
+            android:src="@drawable/titlebar_back"
+            />
+        <TextView
+            android:id="@+id/textView_Actionbar_Title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="品牌所有车型"
+            android:textSize="20sp"
+            android:layout_weight="0.8" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_below="@+id/title"
+        android:background="#6F6F67"/>
+
+    <LinearLayout
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_brand_model"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:listSelector="#00000000"
+            android:background="@drawable/gray_bg"
+            android:divider="#FFFFFF"
+            android:dividerHeight="1dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/view"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/tv_name"
+            android:text="汽车品牌"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="60dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/iv_logo"
+            android:layout_height="60dp" />
+    </RelativeLayout>
+</RelativeLayout>

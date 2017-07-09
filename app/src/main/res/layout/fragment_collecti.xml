@@ -1,0 +1,60 @@
+<com.zjk.my_app.view.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/srl_trends"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context="com.zjk.my_app.fragment.CollectiFragment">
+
+    <!--圈子界面-->
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+
+        android:layout_height="50dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:text="车友圈"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_add"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_color"
+        />-->
+    <ListView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lv_trends"
+        android:layout_below="@+id/view"/>
+
+</RelativeLayout>
+
+<!--android:cacheColorHint="#00000000"
+        android:listSelector="#828687"
+        android:divider="#484C4B"
+        android:dividerHeight="0.5dp"
+        android:layout_below="@+id/view"-->
+</com.zjk.my_app.view.RefreshLayout>
